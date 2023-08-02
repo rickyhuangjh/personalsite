@@ -1,0 +1,15 @@
+.menu-bar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+}
+
+.menu {
+    margin: 10px;
+    color: black;
+}
+
+button {
+    font-size: 30px;
+}
