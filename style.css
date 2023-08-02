@@ -6,10 +6,16 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     color: black;
+    position: static;
     font-size: 40px;
+    min-height: 200vh;
 }
 
 
@@ -17,27 +23,19 @@ body {
 section {
     
     justify-content: center;
-    min-height: 100vh;
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 3rem 18rem
-}
-
-.section {
-
+    padding: 96px 256px;
 }
 
 .sec1 {
-    display: none;
 }
 
 .sec2 {
     font-weight: 300;
     font-size: 70px;
-    position: absolute;
-    top: 20%;
+}
+
+.sec3 {
 }
 
 p.today {

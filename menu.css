@@ -1,8 +1,9 @@
 .menu-bar {
+    position: sticky;
+    top: 0;
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: black;
 }
 
 .menu {
@@ -12,4 +13,9 @@
 
 button {
     font-size: 30px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
 }

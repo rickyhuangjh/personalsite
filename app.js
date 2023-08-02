@@ -1,7 +1,7 @@
 document.getElementById('light-dark-button').addEventListener('click', function() {
     const BODY = document.querySelector('body');
     const CURRENT_BACKGROUND_CLASSLIST = BODY.classList;
-    const lightDarkButton = document.querySelector('light-dark-button');
+    const lightDarkButton = document.querySelector('#light-dark-button');
 
     console.log("clicked");
 
