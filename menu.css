@@ -12,16 +12,20 @@
     margin: auto;
     left: 0;
     right: 0;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(16px);
     border-radius: 12px;
+    box-shadow: 0px 0px 4px 4px var(--dark-shadow);
+}
+
+.menu-bar.light-mode {
+    background-color: transparent;
+    box-shadow: 0px 0px 4px 4px var(--light-shadow);
 }
 
 .menu {
     margin: 2% 3%;
     background-color: transparent;
     border-color: transparent;
-    animation: fadeIn 0.4s ease-in-out;
-    transition: all 0.1s ease-out;
     font-size: 16px;
     color: white;
     display: flex;

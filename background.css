@@ -1,15 +1,13 @@
 body {
 
-    background-color: black;
+    background-color: #1a1a1a;
     color: white;
     position: static;
     font-size: 40px;
     min-height: 200vh;
-    transition: all 0.1s ease-out;
-    
 }
 
 .light-mode {
-    background-color: white;
+    background-color: var(--light-mode-background);
     color: black;
 }
