@@ -1,27 +1,29 @@
 
 .menu-bar {
-    position: sticky;
-    top: 10px;
-    width: 30vw;
-    overflow: hidden;
+    display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 20px;
+    height: 40px;
+    width: 80vw;
+    max-width: 512px;
+    overflow: hidden;
     margin: auto;
-    display: flex;
+    left: 0;
+    right: 0;
     backdrop-filter: blur(4px);
     border-radius: 12px;
 }
 
 .menu {
-    justify-content: center;
-    align-items: center;
     margin: 2% 3%;
     background-color: transparent;
     border-color: transparent;
     backdrop-filter: blur(10px);
     animation: fadeIn 0.4s ease-in-out;
     transition: all 0.1s ease-out;
-    font-size: large;
+    font-size: 16px;
 }
 
 .menu:hover {
@@ -36,4 +38,5 @@ button a {
 
 #button-lightDark {
     font-size: 24px;
+    min-width: 50px;
 }

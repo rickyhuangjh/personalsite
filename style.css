@@ -10,14 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
-
 section {
     
     justify-content: center;
-    width: 100%;
-    padding: 96px 256px;
+    align-items: center;
+    margin: 10vw 10vh;
     
 }
 
@@ -48,10 +45,6 @@ section#about {
 .sec3 {
 }
 
-p.today {
-    font-size: 40px;
-    color: blue;
-}
 
 
 
