@@ -7,10 +7,10 @@ document.getElementById('button-lightDark').addEventListener('click', function()
     body.classList.toggle('light-mode');
     menuList.forEach((x) => x.classList.toggle('light-mode'));
 
-    if (body.classList.contains('light-mode')) {
-        lightDarkIcon.innerHTML = "light_mode";
-    } else {
+    if (!body.classList.contains('light-mode')) {
         lightDarkIcon.innerHTML = "dark_mode";
+    } else {
+        lightDarkIcon.innerHTML = "light_mode";
     }
 
 
