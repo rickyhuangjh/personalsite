@@ -1,11 +1,14 @@
-.dark-mode {
+body {
+
+    background-color: white;
+    color: black;
+    position: static;
+    font-size: 40px;
+    min-height: 200vh;
     transition: all 0.1s ease-out;
-    background-color: #000000;
-    color: #ffffff;
 }
 
-.light-mode {
-    transition: all 0.1s ease-out;
-    background-color: #ffffff;
-    color: #000000;
+.dark-mode {
+    background-color: black;
+    color: white;
 }

@@ -1,21 +1,39 @@
+
 .menu-bar {
     position: sticky;
-    top: 0;
+    top: 10px;
+    width: 30vw;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
+    margin: auto;
     display: flex;
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
 }
 
 .menu {
-    margin: 10px;
-    color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 3%;
+    background-color: transparent;
+    border-color: transparent;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.4s ease-in-out;
+    transition: all 0.1s ease-out;
+    font-size: large;
 }
 
-button {
-    font-size: 30px;
+.menu:hover {
+    opacity: 0.5;
 }
 
 button a {
+    cursor: default;
     text-decoration: none;
-    color: black;
+    color: inherit;
+}
+
+#button-lightDark {
+    font-size: 24px;
 }

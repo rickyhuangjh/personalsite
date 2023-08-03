@@ -14,44 +14,26 @@
 		<script src="https://kit.fontawesome.com/62b1c3ac74.js" crossorigin="anonymous"></script>
 	</head>
 	<div class="menu-bar">
-		<div class="menu menu-0"></div>
-
-		<div class="menu menu-1">
-			<button id="about-button"><a href="#about">About</a></button>
-		</div>
-
-		<div class="menu menu-2">
-			<button id="portfolio-button"><a href="#portfolio">Portfolio</a></button>
-		</div>
-
-		<div class="menu menu-3">
-			<button id="blog-button"><a href="#blog">Blog</a></button>
-		</div>
-
-		<div class="menu menu-4">
-			<button id="contact-button"><a href="#contact">Contact</a></button>
-		</div>
-
-		<div class="menu menu-5">
-			<button id="resume-button">Resume</button>
-		</div>
-
-		<div class="menu menu-6">
-			<button id="light-dark-button">Light mode</button>
-		</div>
+		<button id="button-about" class="menu"><a href="#about">About</a></button>
+		<button id="button-projects" class="menu"><a href="#projects">Projects</a></button>
+		<button id="button-blog" class="menu"><a href="#blog">Blog</a></button>
+		<button id="button-contact" class="menu"><a href="#contact">Contact</a></button>
+		<button id="button-resume" class="menu">Resume</button>
+		<button id="button-lightDark" class="menu"><i id="icon-lightDark" class="fa-regular fa-sun"></i></button>
+		
 	</div>
-	<body class="main-content light-mode">
+	<body class="main-content">
 		<header class="sec1 header active"></header>
 		
 		<main>
 			<section id="about" class="sec2 about">
-				<p>Hi. I'm <strong>Ricky Huang</strong>.</p>
-				<p>I'm a <strong>computer science</strong> student at the</p>
-				<p><strong>University of Waterloo</strong>.</p>
+				<p class="about-text">Hi. I'm <strong>Ricky Huang</strong>,</p>
+				<p class="about-text">a <strong>computer science</strong> student at the</p>
+				<p class="about-text"><strong>University of Waterloo</strong>.</p>
 
 			</section>
-			<section id="portfolio" class="sec3 portfolio">
-				This is the portfolio section.
+			<section id="projects" class="sec3 portfolio">
+				This is the projects section.
 			</section>
 			<section id="blog" class="sec4 blog">
 				This is the blog section.
@@ -64,4 +46,8 @@
 		
 		<script src="./app.js"></script>
 	</body>
+	<footer>
+		<p>This is the end.</p>
+		<p>Computer science at the University of Waterloo 2027.</p>
+	</footer>
 </html>

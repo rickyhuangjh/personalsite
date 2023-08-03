@@ -1,17 +1,37 @@
-document.getElementById('light-dark-button').addEventListener('click', function() {
-    const BODY = document.querySelector('body');
-    const CURRENT_BACKGROUND_CLASSLIST = BODY.classList;
-    const lightDarkButton = document.querySelector('#light-dark-button');
+document.getElementById('button-lightDark').addEventListener('click', function() {
+    const body = document.body;
+    const menuList = document.querySelectorAll('.menu');
+    const lightDarkIcon = document.getElementById('icon-lightDark');
 
-    console.log("clicked");
 
-    if (CURRENT_BACKGROUND_CLASSLIST.contains('light-mode')) {
+    body.classList.toggle('dark-mode');
+    menuList.forEach((x) => x.classList.toggle('dark-mode'));
+    lightDarkIcon.classList.toggle('fa-moon');
+
+
+    return;
+
+
+    if (!body.classList.contains('background-dark-mode')) {
         lightDarkButton.innerHTML = "Dark Mode";
-        CURRENT_BACKGROUND_CLASSLIST.remove('light-mode');
-        CURRENT_BACKGROUND_CLASSLIST.add('dark-mode');
+
+        for (let i=0; i<menuList.length; i++) {
+            menuList[i].classList.remove('menu-light-mode');
+            menuList[i].classList.add('menu-dark-mode');
+        }
+
+        body.classList.remove('background-light-mode');
+        body.classList.add('background-dark-mode');
     } else {
         lightDarkButton.innerHTML = "Light Mode";
-        CURRENT_BACKGROUND_CLASSLIST.remove('dark-mode');
-        CURRENT_BACKGROUND_CLASSLIST.add('light-mode');
+
+        for (let i=0; i<menuList.length; i++) {
+            menuList[i].classList.remove('menu-dark-mode');
+            menuList[i].classList.add('menu-light-mode');
+        }
+
+
+        body.classList.remove('background-dark-mode');
+        body.classList.add('background-light-mode');
     }
   });

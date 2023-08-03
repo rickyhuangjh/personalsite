@@ -10,13 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: white;
-    color: black;
-    position: static;
-    font-size: 40px;
-    min-height: 200vh;
-}
 
 
 
@@ -25,7 +18,24 @@ section {
     justify-content: center;
     width: 100%;
     padding: 96px 256px;
+    
 }
+
+section#about {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* transform: translateY(0px); */
+    }
+    100% {
+        opacity: 1;
+        /* transform: translateY(0px); */
+    }
+}
+  
 
 .sec1 {
 }
@@ -45,3 +55,11 @@ p.today {
 
 
 
+footer {
+    position: static;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+}
