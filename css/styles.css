@@ -1,0 +1,87 @@
+:root {
+    --primary: white;
+    --secondary: white; 
+    --text: black;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 12px;
+}
+
+h2 {
+    text-align: left;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    filter: blur(16px);
+    opacity: 0.4;
+}
+
+header, nav, section, footer {
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    background-color: var(--secondary);
+}
+
+section {
+    margin: 8px;
+    opacity: 0.75;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 1200px;
+    margin: 12px auto;
+
+    padding: 2px;
+    border: 2px solid var(--text);
+    border-radius: 16px;
+    background-color: var(--primary);
+    border-color: var(--text);
+}
+
+
+.item {
+    width: 90%;
+    text-align: center;
+}
+
+.job {
+    width: 90%;
+    padding: 0;
+    margin: 16px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.job-position {
+    margin: 0;
+}
