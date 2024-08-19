@@ -1,12 +1,52 @@
+@import url('animations.css');
+
 :root {
     --primary: #dddddd;
     --secondary: black; 
-    --text: white;
+    --myPurple: #7953cd;
+    --myBlue: #00affa;
 }
 
-* {
+
+
+body {
     font-family: 'Helvetica', sans-serif;
     color: var(--primary);
+    background-color: var(--secondary);
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color:  var(--myBlue);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--myBlue);
+}
+
+a:hover {
+    background: linear-gradient(
+        to right,
+        var(--myBlue) 20%,
+        var(--myPurple) 30%,
+        var(--myPurple) 70%,
+        var(--myBlue) 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 1.5s ease-in-out infinite reverse;
+}
+
+a:before {
+    content: '[';
+}
+
+a::after {
+    content: ']';
 }
 
 h1 {
@@ -45,9 +85,6 @@ header, nav, section, footer {
     z-index: 1;
 }
 
-body {
-    background-color: var(--secondary);
-}
 
 section {
     z-index: 1;
@@ -58,6 +95,52 @@ section {
 .name {
     font-size: 48px;
     margin: 0;
+}
+
+.name-card {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 90%;
+}
+
+.name-card-item {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.name-card-item.name {
+    text-align: center;
+
+    background: linear-gradient(
+        to right,
+        var(--myPurple) 20%,
+        var(--myBlue) 30%,
+        var(--myBlue) 70%,
+        var(--myPurple) 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 8s ease-in-out infinite reverse;
+}
+
+.name-card-item.external-links {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+
+}
+
+.external-link {
+    font-size: 16px;
 }
 
 .container {
@@ -97,4 +180,18 @@ section {
 
 .job-position {
     margin: 0;
+}
+
+.school {
+    width: 90%;
+    padding: 0;
+    margin: 12px;
+}
+
+.school-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }

@@ -4,17 +4,54 @@
     <meta charset="UTF-8:">
     <meta name="viewport" content="" width=device-width, initial-scale="1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
     <title>Ricky Huang</title>
 </head>
 
 <body>
+    <div class="flash-border"></div>
     <video autoplay muted loop id="background-video">
         <source src="static/abstract.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <section id="name">
-        <div class="container name-wrapper">
-            <h1 class="name">Ricky Huang</h1>
+        <div class="container">
+            <div class="name-card">
+                <div class="name-card-item blank"></div>
+                <h1 class="name-card-item name">Ricky Huang</h1>
+                <div class="name-card-item external-links">
+                    <a class="external-link" href="">Resume</a>
+                    <a class="external-link" href="https://www.linkedin.com/in/rickyhuangjh/">LinkedIn</a>
+                    <a class="external-link" href="github.com/rickyhuangjh">GitHub</a>
+                </div>
+            </div>
+            <div class="fancy">
+                <div class="fancy-inner"></div>
+            </div>
+        </div>
+
+    </section>
+    <section id="education">
+        <div class="container">
+            <h1 class="item">Education</h1>
+            <hr class="item">
+            <div class="school">
+                <div class="school-header">
+                    <h2>University of Waterloo</h2>
+                    <h3>Sep. 2022 &#8212; Aug. 2026 Expected</h3>
+                </div>
+                <h3 class="degree">Bachelor of Computer Science</h3>
+                <div class="school-description">
+                    <p>
+                        Relevant coursework: Data Structures and Algorithms, Database Systems, 
+                        Operating Systems, Computer Networks, Machine Learning, Artificial Intelligence.
+                    </p>
+                    <p>
+                        Extracurriculars: Hack the North, Waterloo Data Science Club, 
+                        Waterloo Artificial Intelligence Club, Waterloo Computer Science Club.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="experience">
