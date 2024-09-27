@@ -118,10 +118,10 @@ section {
 
     background: linear-gradient(
         315deg,
-        var(--myPurple) 20%,
-        var(--myBlue) 30%,
-        var(--myBlue) 70%,
-        var(--myPurple) 80%
+        var(--myBlue) 20%,
+        var(--myPurple) 30%,
+        var(--myPurple) 70%,
+        var(--myBlue) 80%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -154,7 +154,7 @@ section {
     padding: 16px;
     border: 2px solid var(--primary);
     border-radius: 16px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
